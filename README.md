@@ -13,3 +13,4 @@ Working through the The Rust Programming Language book
 ### 2021
 
 <p>1/1 - Finished section 5.1, 5.2</p>
+<p>1/2 - Finished section 5.3 and with that all of chapter 5!</p>
