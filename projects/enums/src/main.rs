@@ -93,4 +93,20 @@ fn main() {
         7 => remove_fancy_hat(),
         _ => (),
     }
+
+    // if let example
+    // This is the longer way to do it
+    let mut config_max = Some(3u8);
+    match config_max {
+        Some(max) => println!("The maximum is configured to be {}", max),
+        _ => (),
+    }
+
+    // Shorter way to do it
+    config_max = None;
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {}", max);
+    } else {
+        println!("This else statement is the same as the `_ => ()` match arm above");
+    }
 }
