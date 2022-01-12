@@ -17,3 +17,4 @@ Working through the The Rust Programming Language book
 <p>1/3 & 1/5 - Finished section 6.1</p>
 <p>1/6 - Finished section 6.2 and 6.3, finishing all of chapter 6!</p>
 <p>1/11 - Experimented with a trait, implementing that trait for a struct, and implementing std::fmt::Display on the struct as well.</p>
+<p>1/12 - Experimented with Vector and HashMap. Finished chapter 7.</p>
