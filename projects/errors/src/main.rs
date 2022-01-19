@@ -25,4 +25,25 @@ fn main() {
             }
         },
     };
+
+    let result = get_item(false);
+    let val = match result {
+        Ok(msg) => {
+            println!("Message: {}", msg);
+            msg
+        }
+        Err(e) => {
+            println!("Error: {:?}", e);
+            panic!("Bad price, I need the price to go up")
+        }
+    };
+    // println!("{}", val.unwrap());
+}
+
+fn get_item(v: bool) -> Result<String, ErrorKind> {
+    if v {
+        return Ok(String::from("Metaphysical Mechanism"));
+    } else {
+        return Err(ErrorKind::Unsupported);
+    }
 }
