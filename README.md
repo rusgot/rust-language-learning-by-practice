@@ -22,3 +22,4 @@ Working through the The Rust Programming Language book
 <p>1/16 - Finished sections 8.2 and 8.3, finishing all of chapter 8!</p>
 <p>1/17 - Finished section 9.1</p>
 <p>1/18 - Finished section 9.2</p>
+<p>1/20 - Completed "Valid Parentheses" Leetcode and finished sections 9.3 and 10.1.</p>
