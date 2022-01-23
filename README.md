@@ -23,3 +23,4 @@ Working through the The Rust Programming Language book
 <p>1/17 - Finished section 9.1</p>
 <p>1/18 - Finished section 9.2</p>
 <p>1/20 - Completed "Valid Parentheses" Leetcode and finished sections 9.3 and 10.1.</p>
+<p>1/22 - Started 10.2 but ended up spending hours trying to figure out modules/crates/lib.rs.</p>
