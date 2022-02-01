@@ -1,7 +1,7 @@
 // extern crate aggregator;
 use aggregator::code::{pls_work, NewsArticle, Summary, Tweet};
 use aggregator::test_fn;
-use aggregator_test::game::{player, welcome};
+// use aggregator_test::game::{player, welcome};
 
 fn main() {
     let article = NewsArticle {
@@ -31,6 +31,15 @@ fn main() {
     pls_work("hello");
     test_fn();
 
-    player::hello(String::from("Jake"));
-    welcome();
+    notify(&article);
+    notify(&tweet);
+}
+
+// Only accepts types that implement the `Summary` trait
+pub fn notify(item: &impl Summary) {
+    println!("Breaking news! {}", item.summarize());
+}
+
+pub fn notify_trait_bounds<T: Summary>(item: &T) {
+    println!("Breaking news! {}", item.summarize());
 }
