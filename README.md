@@ -26,3 +26,4 @@ Working through the The Rust Programming Language book
 <p>1/22 - Started 10.2 but ended up spending hours trying to figure out modules/crates/lib.rs.</p>
 <p>2/1 - Finished section 10.2!</p>
 <p>2/4 - Finshed section 10.3, finishing all of chapter 10!</p>
+<p>2/6 - Finished section 11.1</p>
