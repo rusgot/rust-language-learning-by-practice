@@ -29,3 +29,5 @@ Working through the The Rust Programming Language book
 <p>2/6 - Finished section 11.1</p>
 <p>2/7 - Finished section 11.2 and 11.3, finishing all of chapter 11!</p>
 <p>2/8 - Finished chapter 12!</p>
+<p>2/9 - Rewrote minigrep (minigrep_2) to help cement concepts.</p>
+<p>2/10 - Finished chapter 13!</p>
