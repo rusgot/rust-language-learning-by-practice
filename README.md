@@ -33,3 +33,4 @@ Working through the The Rust Programming Language book
 <p>2/10 - Finished chapter 13!</p>
 <p>3/2 - Missed some dates here due to moving to Austin. Finished chapter 14 recently and almost finished with chapter 15! Smart pointers are stretching my brain for sure 😅</p>
 <p>3/4 - Finished chapter 15!</p>
+<p>3/7 - Finished chapter 16!</p>
