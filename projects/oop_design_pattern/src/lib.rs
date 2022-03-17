@@ -12,8 +12,6 @@ impl Post {
     }
 
     pub fn add_text(&mut self, text: &str) {
-        let obj = self.state.as_mut().unwrap();
-        let val = obj.add_text("hello");
         self.content.push_str("hello");
     }
 
@@ -53,17 +51,12 @@ trait State {
         ""
     }
     fn reject(self: Box<Self>) -> Box<dyn State>;
-    fn add_text(self: Box<Self>, text: &str) -> &str;
 }
 
 #[derive(Debug, Copy, Clone)]
 struct Draft {}
 
 impl State for Draft {
-    fn add_text(self: Box<Self>, text: &str) -> &str {
-        text
-    }
-
     fn request_review(self: Box<Self>) -> Box<dyn State> {
         println!("Review requested on {:?}", self);
         Box::new(PendingReview { approval_count: 0 })
@@ -86,11 +79,6 @@ struct PendingReview {
 }
 
 impl State for PendingReview {
-    fn add_text(self: Box<Self>, text: &str) -> &str {
-        println!("Cannot add text to a post not in draft state.");
-        ""
-    }
-
     fn request_review(self: Box<Self>) -> Box<dyn State> {
         println!("Review requested on {:?}", self);
         self
@@ -125,11 +113,6 @@ impl State for PendingReview {
 struct Published {}
 
 impl State for Published {
-    fn add_text(self: Box<Self>, text: &str) -> &str {
-        println!("Cannot add text to a post not in draft state.");
-        ""
-    }
-
     fn request_review(self: Box<Self>) -> Box<dyn State> {
         println!("Post already reviewed and approved.");
         self

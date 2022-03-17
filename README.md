@@ -36,3 +36,4 @@ Working through the The Rust Programming Language book
 <p>3/7 - Finished chapter 16!</p>
 <p>3/8 - Finished another section of chapter 17</p>
 <p>3/15 - Almost finished with chapter 17</p>
+<p>3/17 - Finally finished chapter 17</p>
