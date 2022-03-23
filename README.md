@@ -39,3 +39,4 @@ Working through the The Rust Programming Language book
 <p>3/17 - Finally finished chapter 17</p>
 <p>3/18 - Completed half of chapter 18</p>
 <p>3/21 - Finished chapter 18!</p>
+<p>3/23 - Close to finishing 19.2. Great chapter for Rust used in Substrate. Some things are finally making more sense!</p>
