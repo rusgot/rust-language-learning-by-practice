@@ -1,3 +1,4 @@
+use std::fmt;
 use std::ops::Add;
 
 fn main() {
@@ -31,7 +32,56 @@ fn main() {
     Wizard::fly(&jake);
 
     println!("A baby dog is called a {}", <Dog as Animal>::baby_name());
+
+    let point = Point { x: 8, y: 12 };
+
+    point.outline_print();
+
+    let w = Wrapper(vec![String::from("Hello"), String::from("World")]);
+    println!("{}", w);
+
+    let res = type_alias_test();
 }
+
+type Result = std::result::Result<i32, f32>;
+
+fn type_alias_test() -> Result {
+    Err(420.69)
+}
+
+struct Wrapper(Vec<String>);
+
+impl fmt::Display for Wrapper {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "[{}]", self.0.join(", "))
+    }
+}
+
+// Can only implement `OutlinePrint` trait for a type if that type already implements the `Display` trait
+trait OutlinePrint: fmt::Display {
+    fn outline_print(&self) {
+        let output = self.to_string();
+        let len = output.len();
+        println!("{}", "*".repeat(len + 4));
+        println!("*{}*", " ".repeat(len + 2));
+        println!("* {} *", output);
+        println!("*{}*", " ".repeat(len + 2));
+        println!("{}", "*".repeat(len + 4));
+    }
+}
+
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl fmt::Display for Point {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "({}, {})", self.x, self.y)
+    }
+}
+
+impl OutlinePrint for Point {}
 
 trait Animal {
     fn baby_name() -> String;
