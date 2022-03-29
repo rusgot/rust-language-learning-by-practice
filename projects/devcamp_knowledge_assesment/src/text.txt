@@ -1,0 +1,5 @@
+# Problem 1 Bonus Question
+This should be O(n) as the main work it does is loop once through the range of numbers between 0 and n (number the user entered), keeping track of which numbers are even.
+
+# Problem 2 Bonus Question
+Started trying to come up with an iterative approach as that tends to require less IQ to figure out, but I couldn't come up with anything at all. Switched to thinking about a recursive approach and just hurt my brain even more. I'm gonna be completely honest, I had to look up a solution to get my brain rolling on this one. Looked at the solution as little as possible but enough to get my brain connecting the dots. Time complexity for this should be O(n!). For example, if you had a 3 letter word, the first position would have 3 choices for a letter, the 2nd position would have 2 choices for a letter, and the 3rd position would only have 1 letter left over for it so 3 * 2 * 1. Space complexity is not good in my solution. I cloned the Vec over and over to get around a mut error I was getting. Could improve space complexity with further work, but I think that's beyond the scope of this exercise.
