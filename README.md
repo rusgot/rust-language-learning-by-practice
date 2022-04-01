@@ -43,3 +43,4 @@ Working through the The Rust Programming Language book
 <p>3/28 - Part way through 19.5. Almost to the final chapter!</p>
 <p>3/29 - Took a break from the book to answer the Polkadot devcamp knowledge assessment questions</p>
 <p>3/30 - Finished chapter 19! Will definitely have to read more into macros. Definitely a topic that needs more than 1 section</p>
+<p>4/1 - FINISHED THE BOOK!!!</p>
