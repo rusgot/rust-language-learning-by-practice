@@ -1,3 +1,4 @@
+<em>Update: I finished the book!</em>
 # the-rust-programming-language
 
 Working through the The Rust Programming Language book
