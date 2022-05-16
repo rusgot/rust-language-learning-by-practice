@@ -109,6 +109,11 @@ fn main() {
     drop(drop_test_2);
     println!("drop_test_2 dropped manually...");
     println!("-----Out of scope-----");
+
+    let x1 = Box::new("hello");
+    // let x2 = x1.clone();
+    println!("x1: {:p}, x2: {:p}", x1, x1.clone());
+    assert_eq!(x1, x1);
 }
 
 fn hello(name: &str) {
