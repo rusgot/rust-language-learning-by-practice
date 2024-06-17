@@ -10,6 +10,6 @@ mod tests {
 
     #[test]
     fn add_one_check() {
-        assert_eq!(add_one(3), 4);
+        assert_eq!(add_one(4), 5);
     }
 }
